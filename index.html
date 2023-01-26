@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet engineering</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <input type="checkbox" id="Toggle" />
+      <label for="Toggle" class="toggler">
+        <div class="Menu-container">
+          <div class="line" id="active"></div>
+        </div>
+      </label>
+      <div class="main-menu">
+        <a class="menu-btn" href="#start">01 START</a>
+        <a class="menu-btn" href="#lec">02 COURSE LECTURES</a>
+        <a class="menu-btn" href="#books">03 RELATED BOOKS</a>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <div class="header" id="start">
+        <div class="animated">
+          <p class="header-para1">
+            I N T E R N E T<br />
+            E N G I N E E R I N G
+          </p>
+          <p class="header-para2">I S W H A T W E A R E G O I N G T O</p>
+        </div>
+        <a class="btn" href="#books">SEE THE COURSE RELATED BOOKS</a>
+      </div>
+    </div>
+    <div>
+      <div class="grid-container-2" id="lec">
+        <div class="lectures1">
+          <div class="lectures">
+            <img src="./img/http_icon.png" alt="" />
+            <p>HTTP</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+              reprehenderit.
+            </p>
+          </div>
+        </div>
+        <div class="lectures2">
+          <div class="lectures">
+            <img src="./img/css_icon.png" alt="" />
+            <p>HTML CSS</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+              reprehenderit.
+            </p>
+          </div>
+        </div>
+        <div class="lectures3">
+          <div class="lectures">
+            <img src="./img/js_icon.png" alt="" />
+            <p>JAVASCRIPT</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+              reprehenderit.
+            </p>
+          </div>
+        </div>
+        <div class="lectures4">
+          <div class="lectures">
+            <img src="./img/go_icon.png" alt="" />
+            <p>GOLANG</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+              reprehenderit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid3-container">
+      <div class="books-header">
+        <h1 class="books-header">MOST POPULAR BOOKS</h1>
+      </div>
+      <div class="grid-container-3">
+        <div class="book1" id="books">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-header card1">
+                  <p class="header-text p1">JAVASCRIPT</p>
+                  <p class="header-text p2">GUIDE</p>
+                </div>
+                <div class="card-text">
+                  <p>By David Fiangan</p>
+                  <p>Seventh Edition</p>
+                  <p>Published at 2020</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-back-info">
+                  <p>Price 99$</p>
+                  <a class="purchase-btn" href="#id01">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book2">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-header card2">
+                  <p class="header-text p1">ROAD TO</p>
+                  <p class="header-text p2">REACT</p>
+                </div>
+                <div class="card-text">
+                  <p>By Robin Weieruch</p>
+                  <p>2022 Edition</p>
+                  <p>Published at 2022</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-back-info">
+                  <p>Price 99$</p>
+                  <a class="purchase-btn" href="#id02">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+        <div class="modal" id="id01">
+          <div class="modal-content">
+            <a href="#books" class="close">×</a>
+            <div class="modal-info">
+              <img class="modal-img" src="./img/Book1-1.jpg" alt="" />
+              <div class="right-info">
+                <h1>START READING NOW</h1>
+                <h3>IMPORTAN _ PLEASE READ THESE TERM BEFORE BUYING BOOK</h3>
+                <div class="para-container">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                    nam provident asperiores tenetur, aperiam reprehenderit
+                    deserunt quia neque dolor expedita eveniet sit maxime.
+                    Perspiciatis magnam aperiam laudantium reprehenderit quia
+                    ipsam?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora illo quidem cumque quam impedit rem a pariatur?
+                    Facilis corporis nulla, rem nobis animi non ducimus!
+                  </p>
+                </div>
+                <div>
+                  <a
+                    class="modal-btn"
+                    href="https://www.amazon.com/"
+                    target="_blank"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="id02">
+          <div class="modal-content">
+            <a href="#books" class="close">×</a>
+            <div class="modal-info">
+              <img class="modal-img" src="./img/Book2-1.jpg" alt="" />
+              <div class="right-info">
+                <h1>START READING NOW</h1>
+                <h3>IMPORTAN _ PLEASE READ THESE TERM BEFORE BUYING BOOK</h3>
+                <div class="para-container">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                    nam provident asperiores tenetur, aperiam reprehenderit
+                    deserunt quia neque dolor expedita eveniet sit maxime.
+                    Perspiciatis magnam aperiam laudantium reprehenderit quia
+                    ipsam?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora illo quidem cumque quam impedit rem a pariatur?
+                    Facilis corporis nulla, rem nobis animi non ducimus!
+                  </p>
+                </div>
+                <div>
+                  <a
+                    class="modal-btn"
+                    href="https://www.amazon.com/"
+                    target="_blank"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="id03">
+          <div class="modal-content">
+            <a href="#books" class="close">×</a>
+            <div class="modal-info">
+              <img class="modal-img" src="./img/Book3-1.jpg" alt="" />
+              <div class="right-info">
+                <h1>START READING NOW</h1>
+                <h3>IMPORTAN _ PLEASE READ THESE TERM BEFORE BUYING BOOK</h3>
+                <div class="para-container">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                    nam provident asperiores tenetur, aperiam reprehenderit
+                    deserunt quia neque dolor expedita eveniet sit maxime.
+                    Perspiciatis magnam aperiam laudantium reprehenderit quia
+                    ipsam?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempora illo quidem cumque quam impedit rem a pariatur?
+                    Facilis corporis nulla, rem nobis animi non ducimus!
+                  </p>
+                </div>
+                <div>
+                  <a
+                    class="modal-btn"
+                    href="https://www.amazon.com/"
+                    target="_blank"
+                    >BUY NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-header card3">
+                  <p class="header-text1 p1">INTRODUCING</p>
+                  <p class="header-text1 p2">GO</p>
+                </div>
+                <div class="card-text">
+                  <p>By Caleb Doxsey</p>
+                  <p>First Edition</p>
+                  <p>Published at 2016</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-back-info">
+                  <p>Price 99$</p>
+                  <a class="purchase-btn" href="#id03">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container-4">
+      <div class="footer1">
+        <a class="footer-para">CLASS INFO</a>
+        <a class="footer-para">CONTACT US</a>
+        <a class="footer-para">PRIVACY POLICY</a>
+        <a class="footer-para">TERMS</a>
+      </div>
+      <div class="footer2">
+        <p>Bulit By Morteza Rezaei</p>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

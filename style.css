@@ -1,0 +1,528 @@
+
+  .grid-container-1 {
+    display: grid;
+    grid-template-areas:
+    'header';
+    grid-template-columns: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .grid-container-2 {
+    display: grid;
+    grid-template-areas:
+    'lectures1 lectures2 lectures3 lectures4';
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+      to bottom right,
+      rgba(209, 7, 165, 0.5),
+      rgba(7, 11, 226, 0.5),
+      rgba(8, 230, 26, 0.5)
+    ),
+    url("./img/Background.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-container-3 {
+    display: grid;
+    grid-template-areas:
+    'book1 book2 book3';
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 30px;
+    margin-top: 0px;
+    background-color: lightgray;
+    height: 500px;
+  }
+  .grid-container-4 {
+    display: grid;
+    grid-template-areas:
+    'footer1 footer2';
+    grid-template-columns: 50% 50%;
+    padding: 0px;
+    margin: 0px;
+  }
+ 
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
+.header-para2{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-para1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.animated{
+    animation-name: example;
+    animation-duration: 1s;
+}
+@keyframes example {
+    0%   {opacity: 0; transform: translate(-200px,0px);}
+    100% {opacity: 1; transform: translate(0px,0px);}
+  }
+
+
+.footer-para {
+    padding: 10px;
+    font-size: 20px;
+    min-width: 0px;
+}
+.footer-para:hover{
+  color: white;
+}
+.footer2 > p {
+  font-size:20px;
+}
+
+.btn {
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 250px;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+.btn:hover ,.purchase-btn:hover, .modal-btn:hover {
+    background-color: lightgray;
+  }
+.close:hover{
+  color: red;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header; 
+    background: url("./img/Header.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lectures1 { grid-area: lectures1;  }
+.lectures2 { grid-area: lectures2;  }
+.lectures3 { grid-area: lectures3; }
+.lectures4 { grid-area: lectures4; }
+
+.lectures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: black solid 1px;
+  min-height: 300px;
+  background-color: lightgray;
+  opacity: 0.80;
+  margin: 30px;
+  border-radius: 10px;
+}
+.lectures > img {
+  opacity: 0.5;
+}
+
+.lectures:hover{
+  transform: translate(0px,-10px);
+  transition-duration: 0.5s;
+}
+.lectures > img{
+  width: 50px;
+}
+.book1 { grid-area: book1;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+ }
+.book2 { grid-area: book2;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+ }
+.book3 { grid-area: book3; 
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  }
+
+  .card-header{
+    position: relative;
+    height: 150px;
+    translate: 0px -2px;
+  }
+  .card1{
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.5),
+      rgba(9, 112, 17, 0.5)
+    ),
+     url(./img/Book1-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0)
+  }
+  .card2{
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.5),
+      rgba(7, 3, 250, 0.5)
+    ),
+     url(./img/book2-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0)
+  }
+  .card3{
+    color: purple;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.5),
+      rgba(7, 3, 250, 0.5)
+    ),
+     url(./img/Book3-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .grid3-container{
+    background-color: lightgray;
+    margin: 30px;
+  }
+  .header-text{
+    background-color: rgba(12, 255, 73, 0.2);
+    color: white;
+    font-size: 15px;
+    margin: 1px;
+    opacity: 0.9;
+  }
+
+  .books-header{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ba81cf, #6886d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0px;
+  }
+
+  .books-header:hover{
+    background-image: linear-gradient(to right, #eee9f0, #be0505);
+  }
+
+  .header-text1{
+    background-color: rgba(94, 4, 94, 0.733);
+    color: white;
+    font-size: 15px;
+    margin: 1px;
+    opacity: 0.9;
+  }
+  .p1{
+    width: 110px;
+    translate: 150px 90px;
+  }
+  .p2{
+    width: 60px;
+    translate: 190px 90px;
+  }
+
+  .card-back-info{
+    translate: 0px 80px;
+  }
+
+  .card-back-info > a{
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    font-size: 10px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+
+
+.footer1 {
+    grid-area: footer1;
+    font-size: 10px;
+    display: flex;
+    background-color: gray;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.footer2 { 
+    grid-area: footer2;
+    font-size: 10px;
+    display: flex;
+    background-color: gray;
+    padding: 0px;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 60%;
+  margin: auto;
+  padding-right: 20px;
+  
+}
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 10%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  backdrop-filter: blur(8px);
+}
+
+.modal:target {
+  display:block;
+}
+.modal-img{
+  width: 300px;
+  height: 400px;
+
+}
+.modal-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.para-container{
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.modal-btn{
+  background-color: lightblue;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.right-info > h1 {
+  background-image: linear-gradient(to right, #ba81cf, #6886d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right-info > h3 {
+  color: gray;
+}
+.right-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu-container{
+  cursor:pointer;
+  margin:10% auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.line{
+  position:absolute;
+  height:5px;
+  width:30px;
+  background-color:black;
+  transition: .4s ease;
+  }
+
+/* it hides the checkbox*/
+#Toggle{
+  display:none;
+}
+
+.line::before{
+  content:'';
+  position:absolute;
+  height:5px;
+  width:30px;
+  background-color:black;
+  top:-8px;
+  transition: .4s ease;
+}
+
+.toggler{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  position: fixed;
+  top: 8%;
+  right: 3%;
+  z-index: 20;
+}
+
+
+.line::after{
+  content:'';
+  position:absolute;
+  height:5px;
+  width:30px;
+  background-color:black;
+  top:8px;
+}
+
+#Toggle:checked ~ .main-menu{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position:fixed;
+  z-index: 10;
+  width: 100%;
+  background-image: linear-gradient(to right, #bc7ad4, #1048d6);
+  }
+
+.menu-btn{
+  color: white;
+  margin: 20px;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.menu-btn:hover{
+  color: black;
+}
+
+.main-menu{
+  display: none;
+}
+
+#Toggle:checked + label #active{
+  transform:rotate(45deg);
+  }
+
+#Toggle:checked + label #active::before{
+  transform:rotate(-90deg) translateX(-8px);
+}
+
+#Toggle:checked + label #active::after{
+  display:none;
+}
+
+.main-menu:target{
+  display: none; 
+  background-color: red; 
+}
+
+
+
